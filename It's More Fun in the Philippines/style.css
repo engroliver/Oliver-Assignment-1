@@ -2,3 +2,14 @@ div#map{
  height:100vh;  
  background-color:grey; 
 }
+#map-container{
+position:relative;
+
+}
+#search-container{
+position:absolute;
+z-index:314159;
+top:10px;
+left:45px;
+
+}
