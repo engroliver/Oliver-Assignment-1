@@ -3,12 +3,12 @@ function main (){
         let map = initMap();
 
         let searchResultLayer = L.layerGroup();
-        searchResultLayer.addToMap();   
+        searchResultLayer.addTo(map); 
        
 
     window.addEventListener("DOMContentLoaded",function(){
 
-        document.querySelector('#btnSearch').addEventListener('click',async function(){
+        document.querySelector("#btnSearch").addEventListener('click',async function(){
             let query = document.querySelector('#textInput').value;
             let center = map.getBounds().getCenter();
             let data = await search (center.lat, center.lng, query);
