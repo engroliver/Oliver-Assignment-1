@@ -13,7 +13,7 @@ async function search(lat, lng, query) {
         "params":{
             'll':ll,
             'query':query,
-            'limit': 150
+            'limit': 50,
         }
     })
     return response.data;
