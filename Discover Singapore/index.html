@@ -51,11 +51,21 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-gas-pump"></i>Gas</a>
               </li>
-      
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-compass"></i>Directions
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <input id="StartingPoint" class="form-control me-2" type="text" placeholder="you're location" aria-label="Search">
+                  <input id="Destination" class="form-control me-2" type="text" placeholder="Destination" aria-label="Search">
+                  <button id="btnDirection" class="btn btn-primary mt-2 " type="submit">Get Directions</button>
+                </ul>
+              </li>
             </ul>
+            
             <form class="d-flex">
-              <input id="txtQuery" class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
-              <button id="btnSearch" class="btn btn-outline-light" type="submit">Search</button>
+             <input id="txtQuery" class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
+             <button id="btnSearch" class="btn btn-outline-light" type="submit">Search</button>
             </form>
           </div>
         </div>
