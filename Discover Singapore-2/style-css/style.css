@@ -11,7 +11,8 @@ div#map {
 
 body {
     background-color: black;
-
+    border:0;
+    margin:0;
 }
 
 

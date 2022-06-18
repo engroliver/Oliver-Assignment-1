@@ -52,7 +52,7 @@
                 <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="fa-solid fa-compass"></i>Directions
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul id="form" class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <input id="StartingPoint" class="form-control me-2" type="text" placeholder="you're location" aria-label="Search">
                   <input id="Destination" class="form-control me-2" type="text" placeholder="Destination" aria-label="Search">
                   <button id="btnDirection" class="btn btn-primary mt-2 " type="submit">Get Directions</button>
@@ -63,7 +63,7 @@
             <form class="d-flex">
              <input id="txtQuery" class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
              <buton id="btnSearch" class="btn btn-outline-light" type="submit">Search</buton>
-             <div id="search-results"></div>
+             <div id="search-results"> </div>
             </form>
           </div>
         </div>
@@ -77,7 +77,6 @@
 
 
 </div>
-    
 
     <!-- Leaflet -->
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
