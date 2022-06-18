@@ -1,3 +1,9 @@
+let tourLocation = document.querySelector('#tourist-icon')
+
+
+
+
+
 function main() {
     
     
@@ -8,7 +14,12 @@ function main() {
         searchResultLayer.addTo(map);
 
         window.addEventListener("DOMContentLoaded", function(){
-            
+            //touristData
+            // let touristreq = axius.get('data/TOURISM.geojson');
+            // let touristAttRes = await touristreq;
+            // touristAttData = touristAttRes.data;
+            // touristAttLayer = loadGeoJsonLayer()
+
             document.querySelector("#btnSearch").addEventListener('click', async function(){
 
                 // clear any existing search markers
