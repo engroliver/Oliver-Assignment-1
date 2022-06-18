@@ -1,6 +1,6 @@
 async function run(){
 
-let tourisimData = await axios.get("TOURISM.geojson");
+let tourisimData = await axios.get("data/TOURISM.geojson");
 console.log(tourisimData.data);
 
 

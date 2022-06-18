@@ -14,18 +14,11 @@
    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
    crossorigin=""/>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style-css/style.css">
     <title>Discover Singapore</title>
   </head>
   <body>
-
-<div class="container-fluid">
-
-  <div id="map-container">
-
-    <div id="search-container">
-      <!-- experiment start -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="images/singapore.png" alt="bs" height="50px">DISCOVER SINGAPORE</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,23 +58,20 @@
             
             <form class="d-flex">
              <input id="txtQuery" class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
-             <button id="btnSearch" class="btn btn-outline-light" type="submit">Search</button>
+             <buton id="btnSearch" class="btn btn-outline-light" type="submit">Search</buton>
+             <div id="search-results"></div>
             </form>
           </div>
         </div>
       </nav>
+<div id="bckGrnd" class="container-fluid">
 
-
-      <!-- experiment end -->
-    <!-- <input id="txtQuery" type="text" placeholder="Where to?" />
-    <button id="btnSearch" class="btn btn-primary active btn-sm" >Search</button> -->
-    <!-- <div id="search-results"></div> -->
-  </div>
-  </div>
-  <div id="search-results"></div>
-  <button id="toggleSearchBtn">Show search</button>
-  
+  <div id="map-container">
+    
   <div id="map"></div>
+  </div>
+
+
 </div>
     
 
@@ -98,14 +88,14 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
     crossorigin="anonymous"></script>
     <!-- DataFoursquareJS -->
-    <script src="dataFoursquare.js"></script>
+    <script src="data/dataFoursquare.js"></script>
     <!-- MapJs -->
-    <script src="map.js"></script>
+    <script src="JavaScript/map.js"></script>
     <!-- viewJs -->
-    <script src="view.js"></script>
+    <script src="JavaScript/view.js"></script>
     <!-- TourisimData -->
-    <script src="tourisimData.js"></script>
+    <script src="JavaScript/tourisimData.js"></script>
     <!-- My-Js -->
-    <script src="script.js"></script>
+    <script src="JavaScript/script.js"></script>
 </body>
 </html>
