@@ -1,5 +1,3 @@
-
-
 function main() {
     
     
@@ -9,14 +7,11 @@ function main() {
         let searchResultLayer = L.layerGroup();
         searchResultLayer.addTo(map);
         
-        
+
+       
 
         window.addEventListener("DOMContentLoaded", function(){
-            document.querySelector('#tourist-icon').addEventListener('click',async function (){
-                L.geoJSON(tourisimData).addTo(map);
-                
-                })  
-
+            
             document.querySelector("#btnSearch").addEventListener('click', async function(){
 
                 // clear any existing search markers
@@ -37,8 +32,15 @@ function main() {
 
 
 
-
         })
+        async function tourdata(){
+        let touristatt = await axios.get('data/tour.geojson');
+        for (let item of touristatt.data.features) {
+            console.log(item.geometry.coordinates)
+            L.marker(item.geometry.coordinates).addTo(map)
+        }
+        }
+        tourdata()
     }
 
     init();

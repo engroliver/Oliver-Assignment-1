@@ -1,10 +1,9 @@
-async function run(){
 
-let tourisimData = await axios.get("data/TOURISM.geojson");
+//      async function main(){
+//         let map = initMap();
+        
+      
+  
+//     }
 
-
-
-}
-run()
-
-
+// main();
