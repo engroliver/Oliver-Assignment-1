@@ -25,3 +25,8 @@ const touratticon = L.icon({
     iconUrl: 'images/cam-icon.png',
     iconSize: [48, 48],
 })
+
+const hotelicon = L.icon({
+    iconUrl: 'images/hotel-icon.png',
+    iconSize: [100,100],
+})

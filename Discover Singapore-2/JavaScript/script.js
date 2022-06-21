@@ -30,12 +30,28 @@ function main() {
                 }
             })
 
+            document.querySelector('#hotels-icon').addEventListener('click',async function(){
+               
+                searchResultLayer.clearLayers();
+
+                let query = document.querySelector("#txtQuery").hotel;
+                let center = map.getBounds().getCenter();
+                let data = await search(center.lat, center.lng, query)
+
+                // remove all search results
+                document.querySelector("#search-results").innerHTML = "";
+
+                for(let result of data.results) {
+                    addSearchResult(map, result, searchResultLayer)}
+            })
 
 
         })
      
         document.querySelector("#tourist-icon")
             .addEventListener('click', async function tourdata() {
+
+
                 let touristatt = await axios.get("data/tour.geojson");
                 let touristattLayer = L.markerClusterGroup();
                 for (let item of touristatt.data.features) {

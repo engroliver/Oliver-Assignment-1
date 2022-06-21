@@ -19,11 +19,11 @@ body {
 
 #search-results {
     overflow-y: scroll;
-    max-height: 300px;
+    max-height: 500px;
     max-width: 250px;
     font-size: small;
     position: absolute;
-    z-index: 314159;
+     z-index: 314159; 
     margin-top: 40px;
     padding: 15px;
     background-color: #343a40;
