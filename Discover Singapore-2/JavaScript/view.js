@@ -7,6 +7,8 @@ function addSearchResult(map, result, searchResultLayer) {
     `)
     resultMarker.addTo(searchResultLayer);
 
+
+    
     // create a search result element
     let resultElement = document.createElement('div');
     resultElement.className = 'search-result';

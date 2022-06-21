@@ -21,3 +21,7 @@ function initMap(){
 
     
 }
+const touratticon = L.icon({
+    iconUrl: 'images/cam-icon.png',
+    iconSize: [48, 48],
+})

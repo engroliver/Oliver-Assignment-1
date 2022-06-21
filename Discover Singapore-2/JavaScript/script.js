@@ -34,15 +34,22 @@ function main() {
 
         })
      
-        async function tourdata() {
-            let touristatt = await axios.get("data/tour.geojson");
-            for (let item of touristatt.data.features) {
-                console.log(item.geometry.coordinates);
-                let marker = L.marker([item.geometry.coordinates[1], item.geometry.coordinates[0]]);
-                marker.addTo(map);
-            }
-        }
-        tourdata()
+        document.querySelector("#tourist-icon")
+            .addEventListener('click', async function tourdata() {
+                let touristatt = await axios.get("data/tour.geojson");
+                let touristattLayer = L.markerClusterGroup();
+                for (let item of touristatt.data.features) {
+                    console.log(item.geometry.coordinates);
+                    let marker = L.marker([item.geometry.coordinates[1], item.geometry.coordinates[0]], { icon: touratticon }).addTo(touristattLayer);
+                    marker.bindPopup(`<p>${item.properties.Name}<p>
+                                <p>${item.properties.description}<p>
+                                <img src="${item.properties.PHOTOURL}"/>
+                                                                         `)
+                }
+                touristattLayer.addTo(map)
+            })
+        tourdata();
+        
     }
 
     init();
