@@ -28,5 +28,11 @@ const touratticon = L.icon({
 
 const hotelicon = L.icon({
     iconUrl: 'images/hotel-icon.png',
-    iconSize: [100,100],
+    iconSize: [50,50],
+})
+
+
+const restauranticon = L.icon({
+    iconUrl: 'images/restaurant-icon.png',
+    iconSize: [50, 50],
 })
