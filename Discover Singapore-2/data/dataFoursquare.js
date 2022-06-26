@@ -19,3 +19,4 @@ async function search(lat, lng, query) {
     return response.data;
 }
 
+
