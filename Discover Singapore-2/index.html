@@ -27,6 +27,11 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"/>
 <link rel="stylesheet" href="styles.css"/>
+<!-- Leaflet Geocoding -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+<!-- Leaflet Location -->
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.1/dist/L.Control.Locate.min.css" />
 
 <!-- myStyleCss -->
   <link rel="stylesheet" href="style-css/style.css">
@@ -65,7 +70,7 @@
             <a id="gas-icon" class="nav-link active " aria-current="page" href="#"><i class="fa-solid fa-gas-pump"></i>Gas</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            <a id ="direction-icon"class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fa-solid fa-compass"></i>Directions
             </a>
@@ -106,18 +111,23 @@
  <!-- Leaflet Routing Machine -->
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
-  <!-- axios cdn -->
+   <!-- Leaflet Geocode -->
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <!-- axios cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
     integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- markerLeaflet -->
 <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster-src.js"></script>
-  <!-- bootstrapjs -->
+  <!-- Location Leaflet -->
+  <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.1/dist/L.Control.Locate.min.js"
+    charset="utf-8"></script>
+<!-- bootstrapjs -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
     <!-- Routing-MapJs -->
-  <script src="JavaScript/Routing.js"></script>
+      <script src="JavaScript/Routing.js"></script>
   <!-- DataFoursquareJS -->
   <script src="data/dataFoursquare.js"></script>
   <!-- MapJs -->

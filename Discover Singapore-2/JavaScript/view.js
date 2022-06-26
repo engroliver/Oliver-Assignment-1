@@ -79,4 +79,4 @@ function gasResult(map, result, gasLayer) {
     resultMarker.addTo(gasLayer);
 
 }
-L.control.locate().addTo(map);
+
