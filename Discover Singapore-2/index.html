@@ -39,24 +39,24 @@
 </head>
 
 <body>
+  
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="images/singapore.png" alt="bs" height="50px">DISCOVER SINGAPORE</a>
+      <a id="home-page" class="navbar-brand" href="#"><img src="images/singapore.png" alt="bs" height="50px">DISCOVER SINGAPORE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2  mb-lg-0">
+        <ul class="navbar-nav mx-auto mb-2    mb-lg-0">
           <li class="nav-item">
-            <a id="hotels-icon"class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-hotel"></i>Hotels</a>
+            <a id="tourist-icon" class="nav-link active mapPage " aria-current="page" href="#"><i class="fa-solid fa-panorama"></i> Tourist Attractions</a>
+          </li>
+          <li class="nav-item">
+            <a id="hotels-icon"class="nav-link active mapPage" aria-current="page" href="#"><i class="fa-solid fa-hotel"></i>Hotels</a>
           </li>
           <li class="nav-item">
             <a  id="restaurant-icon"class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-utensils"></i> Restaurants</a>
-          </li>
-          <li class="nav-item">
-            <a id="tourist-icon" class="nav-link active" aria-current="page" href="#"><i
-                class="fa-solid fa-panorama"></i> Tourist Attractions</a>
           </li>
           <li class="nav-item">
             <a id="mall-icon" class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-basket-shopping"></i></i>
@@ -68,7 +68,10 @@
           </li>
           <li class="nav-item">
             <a id="gas-icon" class="nav-link active " aria-current="page" href="#"><i class="fa-solid fa-gas-pump"></i>Gas</a>
-          </li>
+          <!-- </li>
+              <li class="nav-item">
+                <a id="direction-icon" class="nav-link active " aria-current="page" href="#"><i class="fa-solid fa-compass"></i>Directions</a>
+              </li> -->
           <li class="nav-item dropdown">
             <a id ="direction-icon"class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
@@ -83,20 +86,19 @@
             </ul>
           </li>
         </ul>
-        <!-- <div id="search-container"> -->
         <form class="d-flex">
           <input id="txtQuery" class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
           <buton id="btnSearch" class="btn btn-outline-light" type="submit">Search</buton>
           <div id="search-results"> </div>
-          <!-- </div> -->
         </form>
       </div>
     </div>
   </nav>
-  <div id="bckGrnd" class="container-fluid">
+  <div id="parent" class="container-fluid">
 
-    <div id="map-container">
+    <div id="Homepage" class="All-page hidden">Home page</div>
 
+    <div id="map-container" class="All-page hidden">
       <div id="map"></div>
     </div>
 
@@ -128,6 +130,8 @@
     crossorigin="anonymous"></script>
     <!-- Routing-MapJs -->
       <script src="JavaScript/Routing.js"></script>
+      <!-- pageJs -->
+      <script src="JavaScript/page.js"></script>
   <!-- DataFoursquareJS -->
   <script src="data/dataFoursquare.js"></script>
   <!-- MapJs -->

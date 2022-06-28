@@ -26,6 +26,7 @@ function main() {
         touristattLayer.addTo(map);
 
 
+
         window.addEventListener("DOMContentLoaded", function () {
             
             document.querySelector("#btnSearch").addEventListener('click', async function () {
@@ -171,6 +172,7 @@ function main() {
             mallLayer.clearLayers();
             pharmacyLayer.clearLayers();
             gasLayer.clearLayers();
+            touristattLayer.clearLayers();
           
 
             let touristatt = await axios.get("data/tour.geojson");
@@ -186,21 +188,15 @@ function main() {
             touristattLayer.addTo(map)
         })
 
-        document.querySelector('#btnDirection').addEventListener('click', async function () {
+        // document.querySelector('#btnDirection').addEventListener('click', async function () {
 
-            let startP = document.querySelector("#StartingPoint").value;
-            let startll = L.latlng(result.geocodes.main.latitude, result.geocodes.main.longitude);
-            let data = await search(startll.lat, start.ll.lng, startP)
-            let distP = document.querySelector('#Destination').value;
-            let distll = L.latlng(result.geocodes.main.latitude, result.geocodes.main.longitude);
-            
+        //     let startP = document.querySelector("#StartingPoint").value;
+        //     let startll = L.latlng(result.geocodes.main.latitude, result.geocodes.main.longitude);
+        //     let distP = document.querySelector('#Destination').value;
+        //     let distll = L.latlng(result.geocodes.main.latitude, result.geocodes.main.longitude);
+           
 
-        })
-        lc = L.control.locate({
-            strings: {
-                title: "Show me where I am, yo!"
-            }
-        }).addTo(map);
+        // })
   
     
         // L.Routing.control({
@@ -208,34 +204,35 @@ function main() {
         //         startll,
         //         distll
         //     ]
-     
-        // document.querySelector('#direction-icon').addEventListener('click', async function () {
+        
+    //  Routing
+        document.querySelector('#direction-icon').addEventListener('click', async function () {
+        
+        L.Routing.control({
+            waypoints: [
+                L.latLng(0,0),
+                L.latLng(0,0)
+            ],
+            routeWhileDragging: true,
+            geocoder: L.Control.Geocoder.nominatim()
+        }).addTo(map);
+        
 
-        // L.Routing.control({
-        //     waypoints: [
-        //         L.latLng(0,0),
-        //         L.latLng(0,0)
-        //     ],
-        //     routeWhileDragging: true,
-        //     geocoder: L.Control.Geocoder.nominatim()
-        // }).addTo(map);
+        })
+        
 
-        // })
-        // L.control.locate().addTo(map);
-
-        // var lc = L.control.locate({
-        //     position: 'topright',
-        //     strings: {
-        //         title: "Show me where I am, yo!"
-        //     }
-        // }).addTo(map);
-
+        // Location 
+        map.addControl(L.control.locate({
+            locateOptions: {
+                enableHighAccuracy: true
+            }
+        }));
 
 
     }
+    
 
-    
-    
+
 
     init();
     
