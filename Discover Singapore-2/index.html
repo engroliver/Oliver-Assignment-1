@@ -32,7 +32,8 @@
 <!-- Leaflet Location -->
 <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.1/dist/L.Control.Locate.min.css" />
-
+<!-- Mapquest -->
+<link type= text/css rel= stylesheet href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
 <!-- myStyleCss -->
   <link rel="stylesheet" href="style-css/style.css">
   <title>Discover Singapore</title>
@@ -42,7 +43,7 @@
   
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a id="home-page" class="navbar-brand" href="#"><img src="images/singapore.png" alt="bs" height="50px">DISCOVER SINGAPORE</a>
+      <a id="home-icon" class="navbar-brand" href="#"><img src="images/singapore.png" alt="bs" height="50px">DISCOVER SINGAPORE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -94,17 +95,18 @@
       </div>
     </div>
   </nav>
-  <div id="parent" class="container-fluid">
+  <div id="parent" class="container-fluid"> 
+ <div id="Homepage" class="All-pages hidden">Home page</div> 
 
-    <div id="Homepage" class="All-page hidden">Home page</div>
-
-    <div id="map-container" class="All-page hidden">
+    <div id="map-container" class="All-pages hidden">
       <div id="map"></div>
     </div>
 
 
-  </div>
-
+  </div> 
+<!--  -->
+    <!-- MapquestJs -->
+       <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script> 
   <!-- Leaflet -->
   <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
     integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
@@ -132,6 +134,7 @@
       <script src="JavaScript/Routing.js"></script>
       <!-- pageJs -->
       <script src="JavaScript/page.js"></script>
+  
   <!-- DataFoursquareJS -->
   <script src="data/dataFoursquare.js"></script>
   <!-- MapJs -->

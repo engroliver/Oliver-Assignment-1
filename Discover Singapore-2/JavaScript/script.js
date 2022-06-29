@@ -30,6 +30,7 @@ function main() {
         window.addEventListener("DOMContentLoaded", function () {
             
             document.querySelector("#btnSearch").addEventListener('click', async function () {
+                
 
                 // clear any existing search markers
                 searchResultLayer.clearLayers();
@@ -64,7 +65,7 @@ function main() {
                 touristattLayer.clearLayers();
 
 
-                let query = document.querySelector("#txtQuery").hotel;
+                let query = "hotels";
                 let center = map.getBounds().getCenter();
                 let data = await search(center.lat, center.lng, query)
 
@@ -85,7 +86,7 @@ function main() {
                 touristattLayer.clearLayers();
 
 
-                let query = document.querySelector("#txtQuery").restaurant;
+                let query = "restaurant";
                 let center = map.getBounds().getCenter();
                 let data = await search(center.lat, center.lng, query)
 
@@ -106,7 +107,7 @@ function main() {
                 touristattLayer.clearLayers();
 
 
-                let query = document.querySelector("#txtQuery").mall;
+                let query = "malls";
                 let center = map.getBounds().getCenter();
                 let data = await search(center.lat, center.lng, query)
 
@@ -128,7 +129,7 @@ function main() {
                 touristattLayer.clearLayers();
 
 
-                let query = document.querySelector("#txtQuery").value.pharmacy;
+                let query = "pharmacy";
                 let center = map.getBounds().getCenter();
                 let data = await search(center.lat, center.lng, query)
 
@@ -150,7 +151,7 @@ function main() {
                 touristattLayer.clearLayers();
                 
 
-                let query = document.querySelector("#txtQuery").gas;
+                let query = "gas";
                 let center = map.getBounds().getCenter();
                 let data = await search(center.lat, center.lng, query)
 
@@ -162,6 +163,8 @@ function main() {
                 }
             })
 
+
+            
 
         })
 
@@ -187,16 +190,17 @@ function main() {
             }
             touristattLayer.addTo(map)
         })
+       
+        document.querySelector('#btnDirection').addEventListener('click', async function () {
 
-        // document.querySelector('#btnDirection').addEventListener('click', async function () {
+            let startP = document.querySelector("#StartingPoint").value;
+            let startll = L.latlng(result.geocodes.main.latitude, result.geocodes.main.longitude);
 
-        //     let startP = document.querySelector("#StartingPoint").value;
-        //     let startll = L.latlng(result.geocodes.main.latitude, result.geocodes.main.longitude);
-        //     let distP = document.querySelector('#Destination').value;
-        //     let distll = L.latlng(result.geocodes.main.latitude, result.geocodes.main.longitude);
+            let distP = document.querySelector('#Destination').value;
+            let distll = L.latlng(result.geocodes.main.latitude, result.geocodes.main.longitude);
            
 
-        // })
+        })
   
     
         // L.Routing.control({
@@ -206,17 +210,19 @@ function main() {
         //     ]
         
     //  Routing
-        document.querySelector('#direction-icon').addEventListener('click', async function () {
-        
-        L.Routing.control({
+        let routingControl = L.Routing.control({
             waypoints: [
-                L.latLng(0,0),
-                L.latLng(0,0)
+                L.latLng(0, 0),
+                L.latLng(0, 0)
             ],
             routeWhileDragging: true,
             geocoder: L.Control.Geocoder.nominatim()
-        }).addTo(map);
-        
+        })
+
+        document.querySelector('#direction-icon').addEventListener('click', async function () {
+            if (!map.hasLayer(routingControl)
+                                                )
+                routingControl.addTo(map)
 
         })
         
@@ -227,8 +233,10 @@ function main() {
                 enableHighAccuracy: true
             }
         }));
+ 
 
-
+     
+ 
     }
     
 
