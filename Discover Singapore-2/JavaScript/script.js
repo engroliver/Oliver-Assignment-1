@@ -2,9 +2,10 @@ function main() {
 
 
     function init() {
+
         let map = initMap();
 
-        let searchResultLayer = L.layerGroup();
+        let searchResultLayer = L.markerClusterGroup();
         searchResultLayer.addTo(map);
 
         let hotelLayer = L.markerClusterGroup();
@@ -28,9 +29,9 @@ function main() {
 
 
         window.addEventListener("DOMContentLoaded", function () {
-            
+
             document.querySelector("#btnSearch").addEventListener('click', async function () {
-                
+
 
                 // clear any existing search markers
                 searchResultLayer.clearLayers();
@@ -149,7 +150,7 @@ function main() {
                 mallLayer.clearLayers();
                 pharmacyLayer.clearLayers();
                 touristattLayer.clearLayers();
-                
+
 
                 let query = "gas";
                 let center = map.getBounds().getCenter();
@@ -164,7 +165,7 @@ function main() {
             })
 
 
-            
+
 
         })
 
@@ -176,40 +177,42 @@ function main() {
             pharmacyLayer.clearLayers();
             gasLayer.clearLayers();
             touristattLayer.clearLayers();
-          
+
 
             let touristatt = await axios.get("data/tour.geojson");
-            
+
             for (let item of touristatt.data.features) {
-                console.log(item.geometry.coordinates);
+                // console.log(item.geometry.coordinates);
                 let marker = L.marker([item.geometry.coordinates[1], item.geometry.coordinates[0]], { icon: touratticon }).addTo(touristattLayer);
                 marker.bindPopup(`<h4>${item.properties.Name}</h4>
                                 <p>${item.properties.description}<p>
                                 <p>${item.properties.ADDRESSSTREETNAME}<p>
+                                <img src="${item.properties.PHOTOURL}"class="center" width="70%" display:block/>
+
                                                                          `)
             }
             touristattLayer.addTo(map)
         })
-       
-        document.querySelector('#btnDirection').addEventListener('click', async function () {
 
-            let startP = document.querySelector("#StartingPoint").value;
-            let startll = L.latlng(result.geocodes.main.latitude, result.geocodes.main.longitude);
 
-            let distP = document.querySelector('#Destination').value;
-            let distll = L.latlng(result.geocodes.main.latitude, result.geocodes.main.longitude);
-           
+        // CARDS
+        // document.querySelector("#mirlionBtn").addEventListener('click',async function mirlion() {
+        // })
 
-        })
-  
-    
-        // L.Routing.control({
-        //     waypoints: [
-        //         startll,
-        //         distll
-        //     ]
-        
-    //  Routing
+        // ROUTING
+
+        // document.querySelector('#btnDirection').addEventListener('click', async function () {
+
+        //     let startP = document.querySelector("#StartingPoint").value;
+        //     let startll = L.latlng(result.geocodes.main.latitude, result.geocodes.main.longitude);
+
+        //     let distP = document.querySelector('#Destination').value;
+        //     let distll = L.latlng(result.geocodes.main.latitude, result.geocodes.main.longitude);
+
+
+        // })
+
+        //  Routing
         let routingControl = L.Routing.control({
             waypoints: [
                 L.latLng(0, 0),
@@ -220,30 +223,26 @@ function main() {
         })
 
         document.querySelector('#direction-icon').addEventListener('click', async function () {
+
+
             if (!map.hasLayer(routingControl)
-                                                )
+            )
                 routingControl.addTo(map)
 
         })
-        
 
-        // Location 
-        map.addControl(L.control.locate({
-            locateOptions: {
-                enableHighAccuracy: true
-            }
-        }));
- 
 
-     
- 
+
+
+
     }
-    
+
+
 
 
 
     init();
-    
+
 }
 main();
 

@@ -1,8 +1,8 @@
-function initMap(){
+function initMap() {
 
-    let centerPoint = [1.3521,103.8198] 
+    let centerPoint = [1.3521, 103.8198]
     let map = L.map('map')
-    map.setView(centerPoint,12);
+    map.setView(centerPoint, 12);
 
     let tileLayer = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -10,18 +10,33 @@ function initMap(){
         id: 'mapbox/streets-v11',
         tileSize: 512,
         zoomOffset: -1,
-        accessToken: 'pk.eyJ1IjoiZW5ncm9saXZlciIsImEiOiJjbDRhcWVtOGcwNmNiM2JucHZkbngycmZvIn0.Zi8uHI71NTEezC5PZG9sbg' 
+        accessToken: 'pk.eyJ1IjoiZW5ncm9saXZlciIsImEiOiJjbDRhcWVtOGcwNmNiM2JucHZkbngycmZvIn0.Zi8uHI71NTEezC5PZG9sbg'
 
-       
 
-        
+
+
     }).addTo(map);
-   
+    // Location 
+    map.addControl(L.control.locate({
+        locateOptions: {
+            enableHighAccuracy: true
+        }
+    }));
+
+
+
+
+
+
+
+
+
     return map;
-    
-    
-  
-    
+
+
+
+
+
 }
 
 
@@ -33,7 +48,7 @@ const touratticon = L.icon({
 
 const hotelicon = L.icon({
     iconUrl: 'images/hotel-icon.png',
-    iconSize: [50,50],
+    iconSize: [50, 50],
 })
 
 
@@ -47,7 +62,7 @@ const mallicon = L.icon({
     iconSize: [50, 50],
 })
 
-const  pharmacyicon= L.icon({
+const pharmacyicon = L.icon({
     iconUrl: 'images/pharmacy-icon.png',
     iconSize: [50, 50],
 })

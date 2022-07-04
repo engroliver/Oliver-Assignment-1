@@ -80,3 +80,14 @@ function gasResult(map, result, gasLayer) {
 
 }
 
+
+// document.querySelector("#mirlionBtn").addEventListener('click', function () {
+
+   
+//     map.flyTo(latlng, 16);
+    
+
+// })
+
+
+

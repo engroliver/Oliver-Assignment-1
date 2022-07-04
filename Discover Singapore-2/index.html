@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -18,123 +19,217 @@
 
   <!-- Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
-    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
-    crossorigin="" />
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/  ==" crossorigin="" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.1/dist/L.Control.Locate.min.css" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.1/dist/L.Control.Locate.min.css" />
   <!-- MarkerLeaflet -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"/>
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"/>
-<link rel="stylesheet" href="styles.css"/>
-<!-- Leaflet Geocoding -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-<!-- Leaflet Location -->
-<link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.1/dist/L.Control.Locate.min.css" />
-<!-- Mapquest -->
-<link type= text/css rel= stylesheet href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
-<!-- myStyleCss -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Leaflet Geocoding -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+  <!-- Leaflet Location -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.1/dist/L.Control.Locate.min.css" />
+  <!-- Mapquest -->
+  <link type=text/css rel=stylesheet href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
+  <!-- myStyleCss -->
   <link rel="stylesheet" href="style-css/style.css">
+  <link rel="stylesheet" href="style-css/card.css">
   <title>Discover Singapore</title>
 </head>
 
 <body>
-  
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
     <div class="container-fluid">
-      <a id="home-icon" class="navbar-brand" href="#"><img src="images/singapore.png" alt="bs" height="50px">DISCOVER SINGAPORE</a>
+      <a id="home-icon" class="navbar-brand" href="#"><img src="images/singapore.png" alt="bs" height="50px">DISCOVER
+        SINGAPORE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2    mb-lg-0">
+        <ul class="navbar-nav me -auto mb-2  mb-lg-0">
           <li class="nav-item">
-            <a id="tourist-icon" class="nav-link active mapPage " aria-current="page" href="#"><i class="fa-solid fa-panorama"></i> Tourist Attractions</a>
+            <a id="tourist-icon" class="nav-link active portal " aria-current="page" href="#"><i
+                class="fa-solid fa-panorama"></i> Tourist Attractions</a>
           </li>
           <li class="nav-item">
-            <a id="hotels-icon"class="nav-link active mapPage" aria-current="page" href="#"><i class="fa-solid fa-hotel"></i>Hotels</a>
+            <a id="hotels-icon" class="nav-link active mportal" aria-current="page" href="#"><i
+                class="fa-solid fa-hotel"></i>Hotels</a>
           </li>
           <li class="nav-item">
-            <a  id="restaurant-icon"class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-utensils"></i> Restaurants</a>
+            <a id="restaurant-icon" class="nav-link active portal" aria-current="page" href="#"><i
+                class="fa-solid fa-utensils"></i> Restaurants</a>
           </li>
           <li class="nav-item">
-            <a id="mall-icon" class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-basket-shopping"></i></i>
+            <a id="mall-icon" class="nav-link active portal" aria-current="page" href="#"><i
+                class="fa-solid fa-basket-shopping"></i></i>
               Malls</a>
           </li>
           <li class="nav-item">
-            <a  id="pharmacies-icon" class="nav-link active" aria-current="page" href="#"><i
+            <a id="pharmacies-icon" class="nav-link active portal" aria-current="page" href="#"><i
                 class="fa-solid fa-prescription-bottle-medical"></i> Pharmacies</a>
           </li>
           <li class="nav-item">
-            <a id="gas-icon" class="nav-link active " aria-current="page" href="#"><i class="fa-solid fa-gas-pump"></i>Gas</a>
-          <!-- </li>
-              <li class="nav-item">
-                <a id="direction-icon" class="nav-link active " aria-current="page" href="#"><i class="fa-solid fa-compass"></i>Directions</a>
-              </li> -->
-          <li class="nav-item dropdown">
+            <a id="gas-icon" class="nav-link active portal" aria-current="page" href="#"><i
+                class="fa-solid fa-gas-pump"></i>Gas</a>
+          </li>
+          <li class="nav-item">
+            <a id="direction-icon" class="nav-link active portal" aria-current="page" href="#"><i
+                class="fa-solid fa-compass"></i>Directions</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
             <a id ="direction-icon"class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fa-solid fa-compass"></i>Directions
-            </a>
-            <ul id="form" class="dropdown-menu" aria-labelledby="navbarDropdown">
+            </a> -->
+          <!-- <ul id="form" class="dropdown-menu" aria-labelledby="navbarDropdown">
               <input id="StartingPoint" class="form-control me-2" type="text" placeholder="you're location"
                 aria-label="Search">
-              <input id="Destination" class="form-control me-2" type="text" placeholder="Destination"
+              <input id="Destination" class="form-control me-2" tgit ype="text" placeholder="Destination"
                 aria-label="Search">
               <button id="btnDirection" class="btn btn-primary mt-2 " type="submit">Get Directions</button>
             </ul>
           </li>
-        </ul>
-        <form class="d-flex">
-          <input id="txtQuery" class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
-          <buton id="btnSearch" class="btn btn-outline-light" type="submit">Search</buton>
-          <div id="search-results"> </div>
-        </form>
+        </ul> -->
+          <div class="search-container">
+            <form class="d-flex"> -->
+              <input id="txtQuery" class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
+              <button id="btnSearch" class="btn btn-outline-light" type="submit">Search</button>
+              <div id="search-results">
+              </div>
+          </div>
+
       </div>
+      </ul>
+      </form>
+
     </div>
   </nav>
-  <div id="parent" class="container-fluid"> 
- <div id="Homepage" class="All-pages hidden">Home page</div> 
+  <div id="parent" class=" container-fluid ">
+    <div id="Homepage" class="All-pages hidden">
+
+      <section class="showcase">
+        <header>
+          <h2 class="logo">WELCOME TO SINGAPORE</h2>
+          <div class="toggle"></div>
+        </header>
+
+        <video autoplay loop muted plays-inline class="back-video">
+          <source src="video/singapore.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="text">
+          <h2>Singapore</h2>
+          <h3>Passion Made Possible!</h3>
+
+      </section>
+      <!-- card -->
+      <div id="cards" class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 ">
+            <img src="images/Mirlion.jpg" class="card-img-top" alt="https://en.wikipedia.org/wiki/Merlion">
+            <div class="card-body">
+              <h5 class="card-title">The Mirlion</h5>
+              <p class="card-text">The official mascot of Singapore. It is depicted as a mythical creature with the head
+                of a lion and the body of a fish.
+
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" id="mirlionBtn" class="btn btn-primary portal">Show on Map</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/marinaBay.jpg" class="card-img-top" alt="https://en.wikipedia.org/wiki/Marina_Bay_Sands">
+            <div class="card-body">
+              <h5 class="card-title">Marina Bay Sands</h5>
+              <p class="card-text">Marina Bay Sands® boasts luxury accommodations, upscale shopping and an infinity pool
+                with unparalleled views of the
+                city.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" id="MarinaBtn" class="btn btn-primary portal">Show on Map</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/GardenBay.jpg" class="card-img-top"
+              alt="https://planetofhotels.com/guide/en/singapore/singapore/gardens-bay">
+            <div class="card-body">
+              <h5 class="card-title">Gardens by the Bay</h5>
+              <p class="card-text">Gardens by the Bay provides mesmerising waterfront views across three gardens,
+                spanning over 101 hectares of reclaimed
+                land.</p>
+            </div>
+            <div class="card-footer ">
+              <a href="#" id="GardenBtn" class="btn btn-primary portal">Show on Map</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div></div>
+    </div>
 
     <div id="map-container" class="All-pages hidden">
+      <!-- <div id="search-container">
+      <input type="text" id="txtQuery" />
+      <button id="btnSearch" class="btn btn-primary btn-sm">Search</button>
+      <div id="search-results">
+    
+    
+      </div>
+    
+    </div> -->
       <div id="map"></div>
+
     </div>
 
 
-  </div> 
-<!--  -->
-    <!-- MapquestJs -->
-       <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script> 
+  </div>
+
+
+
+  <!-- MapquestJs -->
+  <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
   <!-- Leaflet -->
   <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
     integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
     crossorigin=""></script>
-  <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.1/dist/L.Control.Locate.min.js" charset="utf-8"></script>
- <!-- Leaflet Routing Machine -->
-    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
-   <!-- Leaflet Geocode -->
+  <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.1/dist/L.Control.Locate.min.js"
+    charset="utf-8"></script>
+  <!-- Leaflet Routing Machine -->
+  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+  <!-- Leaflet Geocode -->
   <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-    <!-- axios cdn -->
+  <!-- axios cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
     integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- markerLeaflet -->
-<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster-src.js"></script>
+  <!-- markerLeaflet -->
+  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster-src.js"></script>
   <!-- Location Leaflet -->
   <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.1/dist/L.Control.Locate.min.js"
     charset="utf-8"></script>
-<!-- bootstrapjs -->
+  <!-- bootstrapjs -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-    <!-- Routing-MapJs -->
-      <script src="JavaScript/Routing.js"></script>
-      <!-- pageJs -->
-      <script src="JavaScript/page.js"></script>
-  
+  <!-- Routing-MapJs -->
+  <script src="JavaScript/Routing.js"></script>
+  <!-- pageJs -->
+  <script src="JavaScript/page.js"></script>
+
   <!-- DataFoursquareJS -->
   <script src="data/dataFoursquare.js"></script>
   <!-- MapJs -->
