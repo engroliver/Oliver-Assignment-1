@@ -165,8 +165,6 @@ function main() {
             })
 
 
-
-
         })
 
         document.querySelector("#tourist-icon").addEventListener('click', async function tourdata() {
@@ -177,7 +175,8 @@ function main() {
             pharmacyLayer.clearLayers();
             gasLayer.clearLayers();
             touristattLayer.clearLayers();
-
+            
+            document.querySelector("#search-results").innerHTML = "";
 
             let touristatt = await axios.get("data/tour.geojson");
 

@@ -37,7 +37,7 @@
   <link type=text/css rel=stylesheet href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
   <!-- myStyleCss -->
   <link rel="stylesheet" href="style-css/style.css">
-  <link rel="stylesheet" href="style-css/card.css">
+  <link rel="stylesheet" href="style-css/background.css">
   <title>Discover Singapore</title>
 </head>
 
@@ -53,7 +53,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me -auto mb-2  mb-lg-0">
+        <ul class="navbar-nav mx-auto mb-2  mb-lg-0">
           <li class="nav-item">
             <a id="tourist-icon" class="nav-link active portal " aria-current="page" href="#"><i
                 class="fa-solid fa-panorama"></i> Tourist Attractions</a>
@@ -83,31 +83,10 @@
             <a id="direction-icon" class="nav-link active portal" aria-current="page" href="#"><i
                 class="fa-solid fa-compass"></i>Directions</a>
           </li>
-          <!-- <li class="nav-item dropdown">
-            <a id ="direction-icon"class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-compass"></i>Directions
-            </a> -->
-          <!-- <ul id="form" class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <input id="StartingPoint" class="form-control me-2" type="text" placeholder="you're location"
-                aria-label="Search">
-              <input id="Destination" class="form-control me-2" tgit ype="text" placeholder="Destination"
-                aria-label="Search">
-              <button id="btnDirection" class="btn btn-primary mt-2 " type="submit">Get Directions</button>
-            </ul>
-          </li>
-        </ul> -->
-          <div class="search-container">
-            <form class="d-flex"> -->
-              <input id="txtQuery" class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
-              <button id="btnSearch" class="btn btn-outline-light" type="submit">Search</button>
-              <div id="search-results">
-              </div>
-          </div>
+  
 
       </div>
-      </ul>
-      </form>
+      
 
     </div>
   </nav>
@@ -142,7 +121,7 @@
               </p>
             </div>
             <div class="card-footer">
-              <a href="#" id="mirlionBtn" class="btn btn-primary portal">Show on Map</a>
+              <a href="#" id="mirlionBtn" class="btn btn-danger portal">Show on Map</a>
             </div>
           </div>
         </div>
@@ -156,7 +135,7 @@
                 city.</p>
             </div>
             <div class="card-footer">
-              <a href="#" id="MarinaBtn" class="btn btn-primary portal">Show on Map</a>
+              <a href="#" id="MarinaBtn" class="btn btn-danger portal">Show on Map</a>
             </div>
           </div>
         </div>
@@ -171,25 +150,31 @@
                 land.</p>
             </div>
             <div class="card-footer ">
-              <a href="#" id="GardenBtn" class="btn btn-primary portal">Show on Map</a>
+              <a href="#" id="GardenBtn" class="btn btn-danger portal">Show on Map</a>
             </div>
           </div>
         </div>
       </div>
 
-      <div></div>
+      <div id="footer">
+
+
+
+
+
+      </div>
     </div>
 
     <div id="map-container" class="All-pages hidden">
-      <!-- <div id="search-container">
+       <div id="search-container">
       <input type="text" id="txtQuery" />
-      <button id="btnSearch" class="btn btn-primary btn-sm">Search</button>
-      <div id="search-results">
+      <button id="btnSearch" class="btn btn-danger btn-sm">Search</button>
+      <div id="search-results"> 
     
     
       </div>
     
-    </div> -->
+    </div> 
       <div id="map"></div>
 
     </div>
