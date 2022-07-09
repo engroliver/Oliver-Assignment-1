@@ -72,15 +72,23 @@ body {
     max-width: 250px;
   
 
+}
+#headers{
+    height: 250px;
+    position:absolute;
+    color:white
 } 
 #footer{
-    height:500px;
-    
+    height:100px;
+   
 }
 
 
 #cards {
     margin-top: 80px;
+}
+.show{
+    margin-left: 200px;
 }
 
 .search-result {
@@ -99,6 +107,7 @@ body {
     font-weight: bold;
     font-size: 1.5rem;
 }
+
 
 @media(min-width: 767px) {
     #search-container {

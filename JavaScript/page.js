@@ -29,57 +29,50 @@ for (let n of nav){
 
 }
 
-// document.querySelector("#mirlionBtn").addEventListener('click',function(){
+document.querySelector('#mirlionBtn').addEventListener('click', function () {
+    // hide all the existing pages
+    let allPages = document.querySelectorAll('.All-pages');
+    for (let page of allPages) {
+        page.classList.add('hidden');
+        page.classList.remove('show');
+    }
 
-//     // hide all the existing pages
-//     let allPages = document.querySelectorAll('.All-pages');
-//     for (let page of allPages) {
-//         page.classList.add('hidden');
-//         page.classList.remove('show');
-//     }
+    // display page 1
+    let home = document.querySelector('#map-container');
+    home.classList.add('show');
+    home.classList.remove('hidden');
+  
+})
 
-//     // display page 2
-//     let mapPage = document.querySelector('#map-container');
-//     mapPage.classList.add('show');
-//     mapPage.classList.remove('hidden');
+document.querySelector('#MarinaBtn').addEventListener('click', function () {
+    // hide all the existing pages
+    let allPages = document.querySelectorAll('.All-pages');
+    for (let page of allPages) {
+        page.classList.add('hidden');
+        page.classList.remove('show');
+    }
 
+    // display page 1
+    let home = document.querySelector('#map-container');
+    home.classList.add('show');
+    home.classList.remove('hidden');
 
-    
-// })
-// document.querySelector("#MarinaBtn").addEventListener('click', function () {
+})
 
-//     // hide all the existing pages
-//     let allPages = document.querySelectorAll('.All-pages');
-//     for (let page of allPages) {
-//         page.classList.add('hidden');
-//         page.classList.remove('show');
-//     }
+document.querySelector('#GardenBtn').addEventListener('click', function () {
+    // hide all the existing pages
+    let allPages = document.querySelectorAll('.All-pages');
+    for (let page of allPages) {
+        page.classList.add('hidden');
+        page.classList.remove('show');
+    }
 
-//     // display page 2
-//     let mapPage = document.querySelector('#map-container');
-//     mapPage.classList.add('show');
-//     mapPage.classList.remove('hidden');
+    // display page 1
+    let home = document.querySelector('#map-container');
+    home.classList.add('show');
+    home.classList.remove('hidden');
 
-
-
-// })
-// document.querySelector("#GardenBtn").addEventListener('click', function () {
-
-//     // hide all the existing pages
-//     let allPages = document.querySelectorAll('.All-pages');
-//     for (let page of allPages) {
-//         page.classList.add('hidden');
-//         page.classList.remove('show');
-//     }
-
-//     // display page 2
-//     let mapPage = document.querySelector('#map-container');
-//     mapPage.classList.add('show');
-//     mapPage.classList.remove('hidden');
-
-
-
-// })
+})
 
 
 

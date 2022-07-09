@@ -26,6 +26,9 @@ function main() {
         let touristattLayer = L.markerClusterGroup();
         touristattLayer.addTo(map);
 
+        let mirlionLayer = L.markerClusterGroup();
+        mirlionLayer.addTo(map);
+
 
 
         window.addEventListener("DOMContentLoaded", function () {
@@ -186,7 +189,7 @@ function main() {
                 marker.bindPopup(`<h4>${item.properties.Name}</h4>
                                 <p>${item.properties.description}<p>
                                 <p>${item.properties.ADDRESSSTREETNAME}<p>
-                                <img src="${item.properties.PHOTOURL}"class="center" width="70%" display:block/>
+                                <img src="${item.properties.PHOTOURL}" >
 
                                                                          `)
             }
@@ -196,24 +199,94 @@ function main() {
 
         })
 
+        document.querySelector("#mirlionBtn").addEventListener('click', async function mirlion() {
+            searchResultLayer.clearLayers();
+            hotelLayer.clearLayers();
+            restaurantLayer.clearLayers();
+            mallLayer.clearLayers();
+            pharmacyLayer.clearLayers();
+            gasLayer.clearLayers();
+            touristattLayer.clearLayers();
 
-        // CARDS
-        // document.querySelector("#mirlionBtn").addEventListener('click',async function mirlion() {
-        // })
+            document.querySelector("#search-results").innerHTML = "";
+        
+            let touristatt = await axios.get("data/tour.geojson");
+
+            for (let item of touristatt.data.features) {
+                // console.log(item.geometry.coordinates);
+                let marker = L.marker([item.geometry.coordinates[1], item.geometry.coordinates[0]], { icon: touratticon }).addTo(touristattLayer);
+                marker.bindPopup(`<h4>${item.properties.Name}</h4>
+                                <p>${item.properties.description}<p>
+                                <p>${item.properties.ADDRESSSTREETNAME}<p>
+                                <img src="${item.properties.PHOTOURL}"class="center" width="70%" display:block/>
+
+                                                                         `)
+            }
+
+            map.flyTo([1.286862000219157, 103.8545520003101], 18)
+
+        })
+
+        document.querySelector("#MarinaBtn").addEventListener('click', async function mirlion() {
+            searchResultLayer.clearLayers();
+            hotelLayer.clearLayers();
+            restaurantLayer.clearLayers();
+            mallLayer.clearLayers();
+            pharmacyLayer.clearLayers();
+            gasLayer.clearLayers();
+            touristattLayer.clearLayers();
+
+            document.querySelector("#search-results").innerHTML = "";
+
+            let touristatt = await axios.get("data/tour.geojson");
+
+            for (let item of touristatt.data.features) {
+                // console.log(item.geometry.coordinates);
+                let marker = L.marker([item.geometry.coordinates[1], item.geometry.coordinates[0]], { icon: touratticon }).addTo(touristattLayer);
+                marker.bindPopup(`<h4>${item.properties.Name}</h4>
+                                <p>${item.properties.description}<p>
+                                <p>${item.properties.ADDRESSSTREETNAME}<p>
+                                <img src="${item.properties.PHOTOURL}"class="center" width="70%" display:block/>
+
+                                                                         `)
+            }
+
+            map.flyTo([1.283878500351668, 103.8589900004328], 18)
+
+        })
 
 
-        // document.querySelector('#btnDirection').addEventListener('click', async function () {
+        document.querySelector("#GardenBtn").addEventListener('click', async function mirlion() {
+              searchResultLayer.clearLayers();
+            hotelLayer.clearLayers();
+            restaurantLayer.clearLayers();
+            mallLayer.clearLayers();
+            pharmacyLayer.clearLayers();
+            gasLayer.clearLayers();
+            touristattLayer.clearLayers();
+            
+            document.querySelector("#search-results").innerHTML = "";
 
-        //     let startP = document.querySelector("#StartingPoint").value;
-        //     let startll = L.latlng(result.geocodes.main.latitude, result.geocodes.main.longitude);
+            let touristatt = await axios.get("data/tour.geojson");
 
-        //     let distP = document.querySelector('#Destination').value;
-        //     let distll = L.latlng(result.geocodes.main.latitude, result.geocodes.main.longitude);
+            for (let item of touristatt.data.features) {
+                // console.log(item.geometry.coordinates);
+                let marker = L.marker([item.geometry.coordinates[1], item.geometry.coordinates[0]], { icon: touratticon }).addTo(touristattLayer);
+                marker.bindPopup(`<h4>${item.properties.Name}</h4>
+                                <p>${item.properties.description}<p>
+                                <p>${item.properties.ADDRESSSTREETNAME}<p>
+                                <img src="${item.properties.PHOTOURL}">
+
+                                                                         `)
+            }
+
+            map.flyTo([1.281567999977022, 103.8636129999058], 18)
+
+        })
 
 
-        // })
 
-        //  Routing
+        
         let routingControl = L.Routing.control({
             waypoints: [
                 L.latLng(0, 0),

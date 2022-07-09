@@ -18,8 +18,8 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <!-- Leaflet -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
-    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/  ==" crossorigin="" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/  ==" crossorigin="" /> -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
   <link rel="stylesheet"
@@ -27,7 +27,7 @@
   <!-- MarkerLeaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
-  <link rel="stylesheet" href="styles.css" />
+
   <!-- Leaflet Geocoding -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
   <!-- Leaflet Location -->
@@ -91,7 +91,7 @@
     </div>
   </nav>
   <div id="parent" class=" container-fluid ">
-    <div id="Homepage" class="All-pages hidden">
+    <div id="Homepage" class="All-pages hidden mx-auto">
 
       <section class="showcase">
         <header>
@@ -113,7 +113,7 @@
         <div class="col">
           <div class="card h-100 ">
             <img src="images/Mirlion.jpg" class="card-img-top" alt="https://en.wikipedia.org/wiki/Merlion">
-            <div class="card-body">
+            <div class="card-body row text-center g-1">
               <h5 class="card-title">The Mirlion</h5>
               <p class="card-text">The official mascot of Singapore. It is depicted as a mythical creature with the head
                 of a lion and the body of a fish.
@@ -121,21 +121,25 @@
               </p>
             </div>
             <div class="card-footer">
-              <a href="#" id="mirlionBtn" class="btn btn-danger portal">Show on Map</a>
+              <a href="#" id="mirlionBtn" class="btn btn-danger show ">Show on Map</a>
             </div>
           </div>
         </div>
+        
+        
+        
         <div class="col">
+          
           <div class="card h-100">
             <img src="images/marinaBay.jpg" class="card-img-top" alt="https://en.wikipedia.org/wiki/Marina_Bay_Sands">
-            <div class="card-body">
+            <div class="card-body row text-center g-1">
               <h5 class="card-title">Marina Bay Sands</h5>
               <p class="card-text">Marina Bay Sands® boasts luxury accommodations, upscale shopping and an infinity pool
                 with unparalleled views of the
                 city.</p>
             </div>
             <div class="card-footer">
-              <a href="#" id="MarinaBtn" class="btn btn-danger portal">Show on Map</a>
+              <a href="#" id="MarinaBtn" class="btn btn-danger show ">Show on Map</a>
             </div>
           </div>
         </div>
@@ -143,14 +147,14 @@
           <div class="card h-100">
             <img src="images/GardenBay.jpg" class="card-img-top"
               alt="https://planetofhotels.com/guide/en/singapore/singapore/gardens-bay">
-            <div class="card-body">
+            <div class="card-body row text-center g-1">
               <h5 class="card-title">Gardens by the Bay</h5>
               <p class="card-text">Gardens by the Bay provides mesmerising waterfront views across three gardens,
                 spanning over 101 hectares of reclaimed
                 land.</p>
             </div>
             <div class="card-footer ">
-              <a href="#" id="GardenBtn" class="btn btn-danger portal">Show on Map</a>
+              <a href="#" id="GardenBtn" class="btn btn-danger show">Show on Map</a>
             </div>
           </div>
         </div>
