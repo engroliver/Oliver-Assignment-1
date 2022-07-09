@@ -1,5 +1,5 @@
 # Discover Singapore
-<img src="images/readme.jpg>" style="display:block">
+<img src="./images/readme.jpg>" style="display:block">
 <br>
 
 The live demo to the website can be accessed [here](https://engroliver.github.io/Oliver-Assignment-1/).
@@ -26,4 +26,4 @@ The users of the web application want to discover singapore and have everything 
 
 ### Justification for the App
 
-To discover famous tourist spots, users would currently have to do an internet search which return countless articles and would have missed unknown locations. The articles are wordy, and it can take the users some effort to find the location of different tourist spots The web application provides a convenient way to navigate in singapore on an interactive map and to provide other useful features to aid users to plan a vacation if they would like to.
+To discover famous tourist spots, users would currently have to do an internet search which return countless articles and would have missed unknown locations to the user. The articles are wordy, and it can take the users some effort to find the location of different tourist spots The web application provides a convenient way to navigate in singapore on an interactive map and to provide other useful features to aid users to plan a vacation if they would like to.
