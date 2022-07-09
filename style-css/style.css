@@ -73,11 +73,7 @@ body {
   
 
 }
-#headers{
-    height: 250px;
-    position:absolute;
-    color:white
-} 
+
 #footer{
     height:100px;
    
@@ -87,8 +83,8 @@ body {
 #cards {
     margin-top: 80px;
 }
-.show{
-    margin-left: 200px;
+.show-m{
+    margin-left: 190px;
 }
 
 .search-result {

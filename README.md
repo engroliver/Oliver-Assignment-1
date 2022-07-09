@@ -27,3 +27,17 @@ The users of the web application want to discover singapore and have everything 
 ### Justification for the App
 
 To discover famous tourist spots, users would currently have to do an internet search which return countless articles and would have missed unknown locations to the user. The articles are wordy, and it can take the users some effort to find the location of different tourist spots The web application provides a convenient way to navigate in singapore on an interactive map and to provide other useful features to aid users to plan a vacation if they would like to.
+
+## UI/UX
+
+### Strategy
+
+**Organisation**
+* Objective: To promote various tourist attractions within Singapore.
+
+**User**
+* Objective: To Guide and discover Singapore.
+
+* Needs: An easy way to know the locations of tourist attractions and routing directions to navigate through singapore.
+
+
