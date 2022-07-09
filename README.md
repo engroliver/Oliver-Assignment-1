@@ -47,5 +47,5 @@ To discover famous tourist spots, users would currently have to do an internet s
 User Stories | Acceptance Criteria(s)
 ------------ | -------------
 As a local or tourist interested in visiting Singapore's famous tourist spots, I want to be able to easily locate them. | <ul><li>Search function</li><li>Feature to display location of various tourist attractions</li></ul>
-As a person who is lost in the city and have trouble locating he's  geographic location <ul><li>Feature to show curren location</li></ul>
+As a person who is lost in the city and have trouble locating he's  geographic location |<ul><li>Feature to show curren location</li></ul>
 As a person who's having difficulties in navigating from one place to another in singapore   | <ul><li>Feature to calculates a route between a given origin and destination</li></ul>
