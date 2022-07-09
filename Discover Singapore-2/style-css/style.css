@@ -15,23 +15,13 @@ body {
     margin: 0;
 }
 
-/* .navbar{
-    transition: all 0.4s;
-    opacity: 0.80;
-   background-color: black;
 
-
-   
-}*/
-/* home */
 #Homepage {
 
     height: 100vh;
 }
 
-/* ------------ */
 
-/* ---------- */
 .parent {
     height: 100vh;
     position: absolute;
@@ -42,7 +32,6 @@ body {
 .All-pages {
     height: 100vh;
     position: absolute;
-    /* width: 100%; */
     box-sizing: border-box;
     transition: transform 1s;
 }
@@ -89,6 +78,7 @@ body {
     
 }
 
+
 #cards {
     margin-top: 80px;
 }
@@ -101,13 +91,13 @@ body {
 .nav-link {
     font-family: 'Recursive', sans-serif;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .navbar-brand {
     font-family: 'Recursive', sans-serif;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 @media(min-width: 767px) {

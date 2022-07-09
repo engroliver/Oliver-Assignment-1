@@ -81,13 +81,29 @@ function gasResult(map, result, gasLayer) {
 }
 
 
-// document.querySelector("#mirlionBtn").addEventListener('click', function () {
+function addtouristattLayer(map,touristattLayer) {
+    let latlng = ([data.features[55].geometry.coordinates[1], data.features[55].geometry.coordinates[1]], { icon: touratticon })
+    let attMarker = L.marker(latlng,);
+    attmarker.bindPopup(`<h4>${item.properties.Name}</h4>
+                                <p>${item.properties.description}<p>
+                                <p>${item.properties.ADDRESSSTREETNAME}<p>
+                                <img src="${item.properties.PHOTOURL}"class="center" width="70%" display:block/>
 
-   
-//     map.flyTo(latlng, 16);
-    
+                                                                         `)
+    attMarker.addTo(touristattLayer);
 
-// })
 
+    document.querySelector("#mirlionBtn").addEventListener('click',async function(){
+            map.flyTo(latlng, 16);
+            attMarker.openPopup();
+
+
+
+  
+
+    })
+
+
+}
 
 

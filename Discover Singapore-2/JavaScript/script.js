@@ -191,6 +191,9 @@ function main() {
                                                                          `)
             }
             touristattLayer.addTo(map)
+
+
+
         })
 
 
@@ -198,7 +201,6 @@ function main() {
         // document.querySelector("#mirlionBtn").addEventListener('click',async function mirlion() {
         // })
 
-        // ROUTING
 
         // document.querySelector('#btnDirection').addEventListener('click', async function () {
 
