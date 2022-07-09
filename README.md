@@ -1,5 +1,5 @@
 # Discover Singapore
-<img src="./images/readme.jpg>" style="display:block">
+<img src="images/readme.jpg>" style="display:block">
 <br>
 
 The live demo to the website can be accessed [here](https://engroliver.github.io/Oliver-Assignment-1/).
