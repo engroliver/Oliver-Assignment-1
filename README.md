@@ -93,3 +93,9 @@ wireframes for mobile and laptop display for the web application
 **Laptop**
 <img src="images/mobile.png" style="display: block">
 <br>
+
+### Surface
+**Colours**: color scheme is white and red to replicate singapore flag and default bootsrap dark for simplicity 
+
+<img src="images/color.jpg" style="display: block">
+<br>
