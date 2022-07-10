@@ -87,9 +87,9 @@ Content
 wireframes for mobile and laptop display for the web application
 
 **Mobile**
-<img src="images/mobile.JPG" style="display: block">
+<img src="images/mobile.png" style="display: block">
 <br>
 
 **Laptop**
-<img src="images/mobile.JPG" style="display: block">
+<img src="images/mobile.png" style="display: block">
 <br>
