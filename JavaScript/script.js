@@ -36,7 +36,7 @@ function main() {
             document.querySelector("#btnSearch").addEventListener('click', async function () {
 
 
-                // clear any existing search markers
+               
                 searchResultLayer.clearLayers();
                 hotelLayer.clearLayers();
                 restaurantLayer.clearLayers();
@@ -50,7 +50,6 @@ function main() {
                 let center = map.getBounds().getCenter();
                 let data = await search(center.lat, center.lng, query);
 
-                // remove all search results
                 document.querySelector("#search-results").innerHTML = "";
 
                 for (let result of data.results) {
@@ -73,7 +72,7 @@ function main() {
                 let center = map.getBounds().getCenter();
                 let data = await search(center.lat, center.lng, query)
 
-                // remove all search results
+         
                 document.querySelector("#search-results").innerHTML = "";
 
                 for (let result of data.results) {
@@ -94,7 +93,6 @@ function main() {
                 let center = map.getBounds().getCenter();
                 let data = await search(center.lat, center.lng, query)
 
-                // remove all search results
                 document.querySelector("#search-results").innerHTML = "";
 
                 for (let result of data.results) {
@@ -115,7 +113,6 @@ function main() {
                 let center = map.getBounds().getCenter();
                 let data = await search(center.lat, center.lng, query)
 
-                // remove all search results
                 document.querySelector("#search-results").innerHTML = "";
 
                 for (let result of data.results) {
@@ -137,7 +134,6 @@ function main() {
                 let center = map.getBounds().getCenter();
                 let data = await search(center.lat, center.lng, query)
 
-                // remove all search results
                 document.querySelector("#search-results").innerHTML = "";
 
                 for (let result of data.results) {
@@ -159,7 +155,6 @@ function main() {
                 let center = map.getBounds().getCenter();
                 let data = await search(center.lat, center.lng, query)
 
-                // remove all search results
                 document.querySelector("#search-results").innerHTML = "";
 
                 for (let result of data.results) {
@@ -213,7 +208,7 @@ function main() {
             let touristatt = await axios.get("data/tour.geojson");
 
             for (let item of touristatt.data.features) {
-                // console.log(item.geometry.coordinates);
+               
                 let marker = L.marker([item.geometry.coordinates[1], item.geometry.coordinates[0]], { icon: touratticon }).addTo(touristattLayer);
                 marker.bindPopup(`<h4>${item.properties.Name}</h4>
                                 <p>${item.properties.description}<p>
@@ -241,7 +236,7 @@ function main() {
             let touristatt = await axios.get("data/tour.geojson");
 
             for (let item of touristatt.data.features) {
-                // console.log(item.geometry.coordinates);
+              
                 let marker = L.marker([item.geometry.coordinates[1], item.geometry.coordinates[0]], { icon: touratticon }).addTo(touristattLayer);
                 marker.bindPopup(`<h4>${item.properties.Name}</h4>
                                 <p>${item.properties.description}<p>
@@ -270,7 +265,7 @@ function main() {
             let touristatt = await axios.get("data/tour.geojson");
 
             for (let item of touristatt.data.features) {
-                // console.log(item.geometry.coordinates);
+               
                 let marker = L.marker([item.geometry.coordinates[1], item.geometry.coordinates[0]], { icon: touratticon }).addTo(touristattLayer);
                 marker.bindPopup(`<h4>${item.properties.Name}</h4>
                                 <p>${item.properties.description}<p>

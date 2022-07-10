@@ -1,8 +1,8 @@
 # Discover Singapore
-<img src="./images/readme.jpg>" style="display:block">
+<img src='images/readme.JPG' style="display:block">
 <br>
 
-The live demo to the website can be accessed [here](https://engroliver.github.io/Oliver-Assignment-1/).
+
 
 ## Project Summary
 
@@ -13,7 +13,9 @@ Discover Singapore  is a mobile-responsive website with an interactive map that 
 
 ### Target Audience
 
-The target audiences are the locals and tourists. that plans to enjoy their vacation or weekends to discover something new or exciting. The characteristics (e.g., age, occupation, instructional level, IT literacy level) of the goal audiences cover a huge spectrum, hence, the website should be easy to use and intuitive to attain its gaol. 
+The target audiences are the locals and tourists. that plans to enjoy their vacation or weekends to discover something new or want an application to guide them. 
+### The characteristics 
+People who are open to new adventures or have fun in their vacation or free time. 
 
 ### Organisational Goals
 
@@ -27,6 +29,8 @@ The users of the web application want to discover singapore and have everything 
 ### Justification for the App
 
 To discover famous tourist spots, users would currently have to do an internet search which return countless articles and would have missed unknown locations to the user. The articles are wordy, and it can take the users some effort to find the location of different tourist spots The web application provides a convenient way to navigate in singapore on an interactive map and to provide other useful features to aid users to plan a vacation if they would like to.
+
+The live demo to the website can be accessed [here](https://engroliver.github.io/Oliver-Assignment-1/).
 
 ## UI/UX
 
@@ -49,3 +53,32 @@ User Stories | Acceptance Criteria(s)
 As a local or tourist interested in visiting Singapore's famous tourist spots, I want to be able to easily locate them. | <ul><li>Search function</li><li>Feature to display location of various tourist attractions</li></ul>
 As a person who is lost in the city and have trouble locating he's  geographic location |<ul><li>Feature to show curren location</li></ul>
 As a person who's having difficulties in navigating from one place to another in singapore   | <ul><li>Feature to calculates a route between a given origin and destination</li></ul>
+
+### Scope
+
+**Functional Requirements**
+
+Features
+* Display tourist attractions
+* Display hotels
+* Display malls
+* Display Restaurants
+* Display pharmacies
+* Display gas stations
+* Search for specific locations
+* Show current location of user
+* calculates a route between a given origin and destination
+
+Content
+* Information on the tourist attractions (name, description, and image)
+* Location of tourist attractions (achieved by markers on map)
+
+**Non-functional requirements**
+
+* Performance criteria
+* Mobile responsiveness
+
+### Structure
+<img src="images/structure.JPG" style="display: block">
+<br>
+
