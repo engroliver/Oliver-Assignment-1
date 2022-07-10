@@ -82,3 +82,14 @@ Content
 <img src="images/structure.JPG" style="display: block">
 <br>
 
+
+### Skeleton
+wireframes for mobile and laptop display for the web application
+
+**Mobile**
+<img src="images/mobile.JPG" style="display: block">
+<br>
+
+**Laptop**
+<img src="images/mobile.JPG" style="display: block">
+<br>

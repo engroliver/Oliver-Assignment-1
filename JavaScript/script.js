@@ -184,7 +184,7 @@ function main() {
                 marker.bindPopup(`<h4>${item.properties.Name}</h4>
                                 <p>${item.properties.description}<p>
                                 <p>${item.properties.ADDRESSSTREETNAME}<p>
-                                <img src="${item.properties.PHOTOURL}" >
+                                <img src="${item.properties.PHOTOURL}">
 
                                                                          `)
             }
