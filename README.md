@@ -91,7 +91,7 @@ wireframes for mobile and laptop display for the web application
 <br>
 
 **Laptop**
-<img src="images/mobile.png" style="display: block">
+<img src="images/pc.png" style="display: block">
 <br>
 
 ### Surface
@@ -99,3 +99,9 @@ wireframes for mobile and laptop display for the web application
 
 <img src="images/color.jpg" style="display: block">
 <br>
+
+**Font Choice**:  font-family: 'Recursive', sans-serif; are used for its simplicity and perceptibility. 
+
+**Icons and Markers**: markers and icons are selected to contrast the color of the map so the user can easily see the locations.
+
+

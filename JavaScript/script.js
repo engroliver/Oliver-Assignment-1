@@ -34,9 +34,8 @@ function main() {
         window.addEventListener("DOMContentLoaded", function () {
 
             document.querySelector("#btnSearch").addEventListener('click', async function () {
-
-
-               
+                
+              
                 searchResultLayer.clearLayers();
                 hotelLayer.clearLayers();
                 restaurantLayer.clearLayers();
@@ -45,7 +44,7 @@ function main() {
                 gasLayer.clearLayers();
                 touristattLayer.clearLayers();
 
-
+               
                 let query = document.querySelector("#txtQuery").value;
                 let center = map.getBounds().getCenter();
                 let data = await search(center.lat, center.lng, query);

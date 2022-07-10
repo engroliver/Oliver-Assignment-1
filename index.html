@@ -83,7 +83,11 @@
             <a id="direction-icon" class="nav-link active portal" aria-current="page" href="#"><i
                 class="fa-solid fa-compass"></i>Directions</a>
           </li>
-  
+    <form class="d-flex">
+      <input id="txtQuery" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button id="btnSearch" class="btn btn-danger btn" type="submit">Search</button>
+    </form>
+
 
       </div>
       
@@ -113,7 +117,7 @@
         <div class="col">
           <div class="card h-100 ">
             <img src="images/Mirlion.jpg" class="card-img-top" alt="https://en.wikipedia.org/wiki/Merlion">
-            <div class="card-body row text-center g-1">
+            <div class="card-body row g-1">
               <h5 class="card-title">The Mirlion</h5>
               <p class="card-text">The official mascot of Singapore. It is depicted as a mythical creature with the head
                 of a lion and the body of a fish.
@@ -160,26 +164,50 @@
         </div>
       </div>
 
-      <div id="footer">
+      <div id="footer" class="container">
+          <div class="row my-5 mx-auto">
+            <form class="text-center p-10">
+        
+        <h2 class="mt-5">BOOK A FLIGHT</h2>
 
+<input type="radio" name="sitting" value="indoor">
+<label>Returning</label>
+<input type="radio" name="sitting" value="outdoor">
+<label>One Way</label>
+<input type="radio" name="sitting" value="outdoor">
+<label>Stopover/Multi-city</label><br>
+        <br>
 
+        <label>Origin:</label>
+        <input type=text placeholder="">
+        <label>Destination:</label>
+        <input type="text"><br>
+        <br>
+        <label>Departure Date</label>
+        <input type=date>
+        <label>Return Date</label>
+        <input type=date><br>
+        <br>
+          <label>Passenger(s)</label>
+          <input type="text">
+          <label>Cabin Class</label>
+          <input type="text">
+          <br></br>
+          <a href="#" id="GardenBtn" class="btn  btn-danger ">SEARCH FLIGHTS</a>
 
-
-
+        </form>
+          </div>
       </div>
     </div>
 
     <div id="map-container" class="All-pages hidden">
-       <div id="search-container">
-      <input type="text" id="txtQuery" />
-      
-      <button id="btnSearch" class="btn btn-danger btn-sm">Search</button>
-      <div id="search-results"> 
-       
-    
-      </div>
-    
-    </div> 
+<div id="search-container" class="collapse navbar-collapse" >
+   
+  <div id="search-results">
+
+  </div>
+
+</div>
       <div id="map"></div>
 
     </div>

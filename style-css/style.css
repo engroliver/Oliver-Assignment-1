@@ -59,27 +59,27 @@ body {
 #search-container {
     position: absolute;
     z-index: 314159;
-     top: 10px;
     left: 50px; 
     padding: 25px;
-    background-color: #343a40;
+    background-color:#343a40;
     color:white;
     font-weight: bold;
     border-radius: 5px;
+   
         
 }
 
 #search-results {
     overflow-y: scroll;
-    max-height: 500px;
-    max-width: 250px;
-  
+     max-height: 400px;
+    max-width: 200px; 
 
 }
 
 #footer{
-    height:100px;
-   
+    height:500px;
+   color:white;
+font-family: 'Recursive', sans-serif;
 }
 
 
@@ -102,6 +102,10 @@ body {
     font-family: 'Recursive', sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
+}
+input{
+    border-color:white;
+    border-style: solid;
 }
 
 
