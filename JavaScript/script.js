@@ -28,14 +28,13 @@ function main() {
 
         let mirlionLayer = L.markerClusterGroup();
         mirlionLayer.addTo(map);
-
-
+     
 
         window.addEventListener("DOMContentLoaded", function () {
 
             document.querySelector("#btnSearch").addEventListener('click', async function () {
                 
-              
+             
                 searchResultLayer.clearLayers();
                 hotelLayer.clearLayers();
                 restaurantLayer.clearLayers();
@@ -48,7 +47,7 @@ function main() {
                 let query = document.querySelector("#txtQuery").value;
                 let center = map.getBounds().getCenter();
                 let data = await search(center.lat, center.lng, query);
-
+                document.querySelector("#search-results").style.backgroundColor = "#212529";
                 document.querySelector("#search-results").innerHTML = "";
 
                 for (let result of data.results) {
@@ -291,7 +290,7 @@ function main() {
         })
 
         document.querySelector('#direction-icon').addEventListener('click', async function () {
-
+            document.querySelector("#search-results").innerHTML = "";
 
             if (!map.hasLayer(routingControl)
             )

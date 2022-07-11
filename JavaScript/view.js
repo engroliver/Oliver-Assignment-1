@@ -1,3 +1,7 @@
+
+
+
+
 function addSearchResult(map, result, searchResultLayer) {
     let latlng = [result.geocodes.main.latitude, result.geocodes.main.longitude];
     let resultMarker = L.marker(latlng,);
@@ -13,6 +17,7 @@ function addSearchResult(map, result, searchResultLayer) {
     let resultElement = document.createElement('div');
     resultElement.className = 'search-result';
     resultElement.innerHTML = result.name;
+   
     resultElement.addEventListener('click', function () {
         map.flyTo(latlng, 16);
         resultMarker.openPopup();
