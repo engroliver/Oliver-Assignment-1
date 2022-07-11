@@ -59,12 +59,12 @@ As a person who's having difficulties in navigating from one place to another in
 **Functional Requirements**
 
 Features
-* Display tourist attractions
-* Display hotels
-* Display malls
-* Display Restaurants
-* Display pharmacies
-* Display gas stations
+* Display tourist attractions layer
+* Display hotels layer
+* Display malls layer 
+* Display Restaurants layer 
+* Display pharmacies layer
+* Display gas stations layer
 * Search for specific locations
 * Show current location of user
 * calculates a route between a given origin and destination
@@ -103,5 +103,21 @@ wireframes for mobile and laptop display for the web application
 **Font Choice**:  font-family: 'Recursive', sans-serif; are used for its simplicity and perceptibility. 
 
 **Icons and Markers**: markers and icons are selected to contrast the color of the map so the user can easily see the locations.
+
+
+## Features
+Features | Descriptions
+-------- | -------------
+Display tourist attractions layer | This feature through stored geojson file from data.gov.sg can display  tourist attraction  icons with description,location and image.
+Display hotel,restaurant,malls,phamacies and gas layers| This feature through foursquare database can display the icons with name and location of said layers.
+Search for places | This feature uses foursqaure database by querying name, category name, taste label, or chain name and displaying it to the map through marker with name and location.
+Leaflet Routing Machine | Calculates a route between a given origin and destination
+
+
+### Limitations and future implementations
+Limitations | Future Implementations to Resolve Limitations
+----------- | -------------
+Routing Machine doesn't display traffic and current location | Create more comprehinsive program with an api that could provide real time traffic data.
+Images dosent doesn't directly in markers | Imrpove functions that could extract images from the data
 
 
