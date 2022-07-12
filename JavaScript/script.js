@@ -179,16 +179,17 @@ function main() {
             for (let item of touristatt.data.features) {
                 // console.log(item.geometry.coordinates);
                 let marker = L.marker([item.geometry.coordinates[1], item.geometry.coordinates[0]], { icon: touratticon }).addTo(touristattLayer);
-                marker.bindPopup(`<h4>${item.properties.Name}</h4>
-                                <p>${item.properties.description}<p>
-                                <p>${item.properties.ADDRESSSTREETNAME}<p>
-                                <img src="${item.properties.PHOTOURL}">
+                marker.bindPopup(`
+                                <h4> ${ item.properties.Name}</h4>
+                                <p>${item.properties.description}</p>
+                                <p>${item.properties.ADDRESSSTREETNAME}</p>
+                                <img src="${item.properties.PHOTOURL} " height=200px width=300px/>
 
                                                                          `)
             }
             touristattLayer.addTo(map)
 
-
+                
 
         })
 
