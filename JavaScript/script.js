@@ -210,9 +210,9 @@ function main() {
                
                 let marker = L.marker([item.geometry.coordinates[1], item.geometry.coordinates[0]], { icon: touratticon }).addTo(touristattLayer);
                 marker.bindPopup(`<h4>${item.properties.Name}</h4>
-                                <p>${item.properties.description}<p>
-                                <p>${item.properties.ADDRESSSTREETNAME}<p>
-                                <img src="${item.properties.PHOTOURL}"class="center" width="70%" display:block/>
+                                <p>${item.properties.description}</p>
+                                <p>${item.properties.ADDRESSSTREETNAME}</p>
+                                <img src="${item.properties.PHOTOURL} " height=200px width=300px/>
 
                                                                          `)
             }
@@ -238,9 +238,9 @@ function main() {
               
                 let marker = L.marker([item.geometry.coordinates[1], item.geometry.coordinates[0]], { icon: touratticon }).addTo(touristattLayer);
                 marker.bindPopup(`<h4>${item.properties.Name}</h4>
-                                <p>${item.properties.description}<p>
-                                <p>${item.properties.ADDRESSSTREETNAME}<p>
-                                <img src="${item.properties.PHOTOURL}"class="center" width="70%" display:block/>
+                                <p>${item.properties.description}</p>
+                                <p>${item.properties.ADDRESSSTREETNAME}</p>
+                             <img src="${item.properties.PHOTOURL} " height=200px width=300px/>
 
                                                                          `)
             }
@@ -267,9 +267,9 @@ function main() {
                
                 let marker = L.marker([item.geometry.coordinates[1], item.geometry.coordinates[0]], { icon: touratticon }).addTo(touristattLayer);
                 marker.bindPopup(`<h4>${item.properties.Name}</h4>
-                                <p>${item.properties.description}<p>
-                                <p>${item.properties.ADDRESSSTREETNAME}<p>
-                                <img src="${item.properties.PHOTOURL}">
+                                <p>${item.properties.description}</p>
+                                <p>${item.properties.ADDRESSSTREETNAME}</p>
+                               <img src="${item.properties.PHOTOURL} " height=200px width=300px/>
 
                                                                          `)
             }

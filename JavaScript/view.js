@@ -8,6 +8,7 @@ function addSearchResult(map, result, searchResultLayer) {
     resultMarker.bindPopup(`
         <h3>${result.name}</h3>
         <p>${result.location.formatted_address}</p>
+        
     `)
     resultMarker.addTo(searchResultLayer);
 

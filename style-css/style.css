@@ -77,11 +77,22 @@ body {
     
 
 }
-
+#foottitle{
+    color:white;
+    font-family: 'Recursive', sans-serif;
+    font-weight: bold;
+}
 #footer{
-    height:500px;
+    height:550px;
    color:white;
 font-family: 'Recursive', sans-serif;
+max-width: 500px;
+}
+#errordiv{
+    color:#c41628;
+
+    padding:10px;
+    font-family: 'Recursive', sans-serif;
 }
 
 

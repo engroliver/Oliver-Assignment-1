@@ -85,7 +85,7 @@
           </li>
     <form class="d-flex">
       <input id="txtQuery" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button id="btnSearch" class="btn btn-danger btn" type="submit">Search</button>
+      <button id="btnSearch" class="btn btn-danger btn portal" type="submit">Search</button>
    
     </form>
   
@@ -170,39 +170,39 @@
           </div>
         </div>
       </div>
-
+      <!-- footer/suggestions -->
+      <div id="foottitle" class="row my-5 mx-auto text-center "><h2 class="my-3">Suggest a place to Discover!</h2></div>
       <div id="footer" class="container">
           <div class="row my-5 mx-auto">
             <form class="text-center p-10">
-        
-        <h2 class="mt-5">BOOK A FLIGHT</h2>
-
-<input type="radio" name="sitting" value="indoor">
-<label>Returning</label>
-<input type="radio" name="sitting" value="outdoor">
-<label>One Way</label>
-<input type="radio" name="sitting" value="outdoor">
-<label>Stopover/Multi-city</label><br>
-        <br>
-
-        <label>Origin:</label>
-        <input type=text placeholder="">
-        <label>Destination:</label>
-        <input type="text"><br>
-        <br>
-        <label>Departure Date</label>
-        <input type=date>
-        <label>Return Date</label>
-        <input type=date><br>
-        <br>
-          <label>Passenger(s)</label>
-          <input type="text">
-          <label>Cabin Class</label>
-          <input type="text">
-          <br></br>
-          <a href="#" id="GardenBtn" class="btn  btn-danger ">SEARCH FLIGHTS</a>
-
-        </form>
+                <div class="mb-2">
+                  <div id="errordiv"></div>
+                  <label  class="form-label">Name of Location</label>
+                  <input id="name" type="text" class="form-control form-control-sm" >
+                </div>
+                <div class="row mb-2">
+                  <label class="form-label">Coordinates</label>
+                  <div class="col">
+                    <input type="text" id="latitude" class="form-control form-control-sm" placeholder="Latitude (e.g. 1.3521)" >
+                  </div>
+                  <div class="col">
+                    <input type="text" id="longtitude" class="form-control form-control-sm" placeholder="Longitude (e.g. 103.8198)" >
+                  </div>
+                </div>
+                <div class="mb-2">
+                  <label  class="form-label">Description of the suggested place to discover (optional)</label>
+                  <textarea class="form-control form-control-sm" id="suggest-desc" rows="3"></textarea>
+                </div>
+                <div class="mb-2">
+                  <label  class="form-label">Share you're experience (optional)</label>
+                  <textarea class="form-control form-control-sm" rows="3"></textarea>
+                </div>
+                <div class="mb-2">
+                  <label class="form-label">Image of Location</label>
+                  <input class="form-control form-control-sm" type="file">
+                </div>
+                <a href="#" id="suggest-btn" class="btn  btn-danger ">Suggest</a>
+              
           </div>
       </div>
     </div>
@@ -217,7 +217,8 @@
   <!-- </div> -->
 
 
-
+<!-- suggestionJS -->
+<script src="javaScript/suggestion.js"></script>
   <!-- MapquestJs -->
   <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
   <!-- Leaflet -->
