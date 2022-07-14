@@ -118,8 +118,17 @@ Leaflet Routing Machine | Calculates a route between a given origin and destinat
 Limitations | Future Implementations to Resolve Limitations
 ----------- | -------------
 Routing Machine doesn't display traffic and current location | Create more comprehinsive program with an api that could provide real time traffic data.
-Images dosent doesn't directly in markers | Imrpove functions that could extract images from the data.
-web application have only 1 language 
+web application have only 1 language | Create a function to translate accurately so that everyone from other country could use the application
+
+## Testing
+
+### Test Cases
+The test cases can be found [here]().
+
+### Testing for Mobile Responsiveness
+ * Testing was done using Responsively across Phone , tablet, and Laptop.
+
+ 
 
 
 
