@@ -157,13 +157,11 @@ input{
 }
 
 @media (min-width: 802px) {
-    .fa-solid {
-        display: none;
-    }
+
 }
+    
+
 
 @media (min-width: 1200px) {
-    .fa-solid {
-            display:contents;
-        }
+
 }

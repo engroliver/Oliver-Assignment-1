@@ -118,15 +118,83 @@ Leaflet Routing Machine | Calculates a route between a given origin and destinat
 Limitations | Future Implementations to Resolve Limitations
 ----------- | -------------
 Routing Machine doesn't display traffic and current location | Create more comprehinsive program with an api that could provide real time traffic data.
-web application have only 1 language | Create a function to translate accurately so that everyone from other country could use the application
+web application have only 1 language | Create a function to translate accurately so that everyone from other country could use the application.
+suggestion doesn't store in data base| Crate a database and improve function
 
 ## Testing
 
 ### Test Cases
-The test cases can be found [here]().
+The test cases can be found [here](https://github.com/engroliver/Oliver-Assignment-1/blob/main/images/sing%20test.pdf).
 
-### Testing for Mobile Responsiveness
- * Testing was done using Responsively across Phone , tablet, and Laptop.
+## Technologies Used
+1. HTML 
+    - Used to create the structure of the web application.
+
+2. CSS 
+    - Used to design the user interface and improve user experience of the web application.
+
+3. JavaScript
+    - Used to create the interactions of the web application
+
+4. [Bootstrap v5.1](https://getbootstrap.com/docs/5.1/getting-started/introduction/) 
+    - Used to build and customize the web application by using style/templates and its components 
+
+5. [Leaflet](https://leafletjs.com/) 
+    - Used to create the interactive map for the web application
+
+6. [Markercluster](https://github.com/Leaflet/Leaflet.markercluster) 
+    - Used to improve user experience for the map.
+
+7. [Leaflet Routing Machine](https://www.liedman.net/leaflet-routing-machine/#:~:text=Leaflet%20Routing%20Machine%20is%20an,the%20user%20interface%20and%20interactions.) 
+    - Used to create a routing function in the map.
+
+8. [Leaflet locate](https://github.com/domoritz/leaflet-locatecontrol) 
+    - Used to create a geolocate the user
+
+9. [Axios](https://github.com/axios/axios)
+    - Used to extract data from geoJSON files and foursquare API.
+
+10. [Fontawesome](https://fontawesome.com/icons)
+    - Used to create icons for the nav-links in the web application.
+
+11. [Google Fonts](https://fonts.google.com/)
+    - Used to style the fonts in web application.
+
+12. [icons8](https://icons8.com/icons/set/camera)
+    - Used to improve markers in the interactive map.
+
+13. [GitHub](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+    - Used for deployment of the web application.
+
+
+## Deployment
+The web application is hosted on Github for instructions click [here](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+
+
+
+## Credits
+1. Data.gov.sg
+    - Data source for tourist attractions in geojson format  are obtained from [data.gov.sg](https://data.gov.sg/).
+
+2. developer.foursquare.com
+    - Data source for place search APIs are obtained from [developer.foursquare.com](https://developer.foursquare.com/reference/place-search)
+
+3. youtube.com
+    - Used for aswesome background-video by Around The World 4K in youtube for link click[here](https://www.youtube.com/watch?v=Psr4HZmWHnQ&t=35s)
+
+4. Photos
+    -[Mirlion](https://en.wikipedia.org/wiki/Merlion)
+    -[Marina Bay Sands](https://en.wikipedia.org/wiki/Marina_Bay_Sands)
+    -[Gardens by the Bay](https://planetofhotels.com/guide/en/singapore/singapore/gardens-bay)
+
+5. Guidance
+    - Ace,Razia,shung and tay boon siang for being a great TAs
+
+
+
+
+
+
 
  
 
