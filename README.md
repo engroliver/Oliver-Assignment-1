@@ -183,9 +183,11 @@ The web application is hosted on Github for instructions click [here](https://do
     - Used for aswesome background-video by Around The World 4K in youtube for link click[here](https://www.youtube.com/watch?v=Psr4HZmWHnQ&t=35s)
 
 4. Photos
-    -[Mirlion](https://en.wikipedia.org/wiki/Merlion)
-    -[Marina Bay Sands](https://en.wikipedia.org/wiki/Marina_Bay_Sands)
-    -[Gardens by the Bay](https://planetofhotels.com/guide/en/singapore/singapore/gardens-bay)
+    *[Mirlion](https://en.wikipedia.org/wiki/Merlion)
+
+    *[Marina Bay Sands](https://en.wikipedia.org/wiki/Marina_Bay_Sands)
+    
+    *[Gardens by the Bay](https://planetofhotels.com/guide/en/singapore/singapore/gardens-bay)
 
 5. Guidance
     - Ace,Razia,shung and tay boon siang for being a great TAs
